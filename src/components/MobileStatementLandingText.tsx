@@ -18,7 +18,7 @@ export const MobileStatementLandingText = () => {
             {stepIndex === 0 && (
                 <>
                     <Heading as='h1' size='lg' noOfLines={1} mb={4} style={{ color: "black"}}>
-                        2025 - <span style={{ color: "darkgreen" }}>Suudi Arabistan</span> Hac Vizesi Nasıl Alınır?
+                        <span style={{ color: "darkgreen" }}>Suudi Arabistan</span> Hac Vizesi Nasıl Alınır?
                     </Heading>
                     <Box display="flex" justifyContent="center" mb={4}>
                         <Image height={200} src={mainImage} alt="Kaaba" borderRadius="md" />

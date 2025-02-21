@@ -25,7 +25,7 @@ export const MobileStatementLandingText = () => {
                     </Box>
                     <br/>
                     <Text style={{ color: "black"}}>
-                        Suudi Arabistan hac vizesi başvurusu için gerekli adımları bu rehberde bulabilirsiniz.
+                        Suudi Arabistan (2025) hac vizesi başvurusu için gerekli adımları bu rehberde bulabilirsiniz.
                         <br/><br/>
                         Başvurunuzu başarıyla tamamlamak için aşağıdaki <strong>'başla'</strong> butonuna basıp kılavuzu adım adım takip edin.
                     </Text>

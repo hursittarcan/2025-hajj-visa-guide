@@ -27,7 +27,12 @@ function App() {
                         </div>
                     </div>
                 )}
+
+                <br/><br/>
+
                 <Footer className="footer"/>
+
+                <br/><br/>
             </>
         </ChakraProvider>
     );

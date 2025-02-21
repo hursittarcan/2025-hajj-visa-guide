@@ -1,10 +1,14 @@
 import { Box, Heading, Text, Image, Button } from "@chakra-ui/react";
-import { useState } from "react";
+import {useEffect, useState} from "react";
 import mainImage from "../assets/kaaba.png";
 import playStore from "../assets/play.jpg";
 
 export const MobileStatementLandingText = () => {
     const [stepIndex, setStepIndex] = useState(0);
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [stepIndex]);
 
     const nextStep = () => {
         setStepIndex((prev) => Math.min(prev + 1, 6));

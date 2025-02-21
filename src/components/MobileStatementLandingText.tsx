@@ -2,6 +2,8 @@ import { Box, Heading, Text, Image, Button } from "@chakra-ui/react";
 import {useEffect, useState} from "react";
 import mainImage from "../assets/kaaba.png";
 import playStore from "../assets/play.jpg";
+import vpnApp from "../assets/vpn.png";
+import googlePlay2 from "../assets/googleplay2.png";
 
 export const MobileStatementLandingText = () => {
     const [stepIndex, setStepIndex] = useState(0);
@@ -11,7 +13,7 @@ export const MobileStatementLandingText = () => {
     }, [stepIndex]);
 
     const nextStep = () => {
-        setStepIndex((prev) => Math.min(prev + 1, 6));
+        setStepIndex((prev) => Math.min(prev + 1, 10));
     };
 
     const prevStep = () => {
@@ -53,20 +55,15 @@ export const MobileStatementLandingText = () => {
 
                         Hac vizesi başvurusunu en kolay şekilde Android telefonla yapabilirsiniz.</Text>
 
-
-                    <br/><br/>
-                    <br/><br/>
-                    <br/><br/>
-                    <br/><br/>
-                    <br/><br/>
                 </>
             )}
 
             {stepIndex === 2 && (
                 <>
-                    <Heading as='h1' size='lg' mb={4} style={{color: "black"}}><span style={{ color: "darkgreen"}}>2. Adim</span>: Google Play Store'u açın</Heading>
+                    <Heading as='h1' size='lg' mb={4} style={{color: "black"}}><span style={{ color: "darkgreen"}}>2. Adim</span>: Google Play Store'u açın.</Heading>
                     <Text style={{color: "black"}}>
                         Telefonunuzda <b>Google Play Store</b> uygulamasını bulun ve açın.
+
 
                         <br/><br/>
 
@@ -75,39 +72,122 @@ export const MobileStatementLandingText = () => {
                     <br/>
                     <Image src={playStore}  alt="Google Play Store Search"
                            borderRadius="md"/>
-                    <br/><br/>
-                    <br/><br/>
                 </>
             )}
 
             {stepIndex === 3 && (
                 <>
-                    <Heading as='h1' size='lg' mb={4}>VPN uygulamasını indirin</Heading>
-                    <Text>İlk sonucu tıklayın, <strong>'VPN Super Unlimited Proxy'</strong> uygulamasını indirin.</Text>
-                    <Image src="https://source.unsplash.com/400x300/?vpn" alt="VPN App" borderRadius="md" />
+                    <Heading as='h1' size='lg' mb={4} style={{color: "black"}}><span style={{ color: "darkgreen"}}>3. Adim</span>: VPN uygulamasını arayin.</Heading>
+                    <Text>Google Play Store uygulamasinda sag ust tarafta arama dugmesine basarak, "VPN" yazarak arama yapin.
+
+                        <br/><br/>
+
+                        <Image src={googlePlay2}  alt="Google Play Store Search"
+                               borderRadius="md"/>
+                    </Text>
                 </>
             )}
 
             {stepIndex === 4 && (
                 <>
-                    <Heading as='h1' size='lg' mb={4}>VPN'i açın ve Londra sunucusunu seçin</Heading>
-                    <Image src="https://source.unsplash.com/400x300/?server" alt="VPN Server" borderRadius="md" />
+                    <Heading as='h1' size='lg' mb={4} style={{color: "black"}}><span style={{color: "darkgreen"}}>4. Adim</span>:
+                        VPN uygulamasını indirin.</Heading>
+                    <Text>
+                        Aramayı yaptıktan sonra, çıkan uygulamalar arasında <strong>'VPN Super Unlimited
+                        Proxy'</strong> uygulamasının üzerine basın ve yeşil 'Yükle' düğmesine tıklayın.
+                    </Text>
+
+                    <Image src={vpnApp} alt="Google Play Store Search"
+                           borderRadius="md"/>
                 </>
             )}
 
             {stepIndex === 5 && (
                 <>
-                    <Heading as='h1' size='lg' mb={4}>Google Play Store'a geri dönün</Heading>
-                    <Text>'Saudi Visa Bio' uygulamasını arayın. Şimdi görünmelidir.</Text>
-                    <Image src="https://source.unsplash.com/400x300/?playstore" alt="Google Play Store" borderRadius="md" />
+                    <Heading as='h1' size='lg' mb={4} style={{color: "black"}}><span style={{color: "darkgreen"}}>5. Adim</span>:
+                        VPN uygulamasını açın.</Heading>
+                    <Text>
+                        <strong>'VPN Super Unlimited Proxy'</strong> uygulamasının baslatin.
+
+                        <br/><br/>
+
+                        VPN uygulamasinin ana sayfasi alttaki fotograftaki gibi gozukuyor.
+                    </Text>
+
+                    <Image src={vpnApp} alt="Google Play Store Search"
+                           borderRadius="md"/>
                 </>
             )}
 
             {stepIndex === 6 && (
                 <>
-                    <Heading as='h1' size='lg' mb={4}>Uygulamayı indirin</Heading>
-                    <Text>Uygulamayı indirin ve açarak talimatları takip edin.</Text>
-                    <Image src="https://source.unsplash.com/400x300/?app" alt="App Download" borderRadius="md" />
+                    <Heading as='h1' size='lg' mb={4} style={{color: "black"}}><span style={{color: "darkgreen"}}>6. Adim</span>:
+                        Londra sunucusuna bağlan.</Heading>
+                    <Text>
+                        <strong>'VPN Super Unlimited Proxy'</strong> uygulamasınında Ingiltere bayragini bulup.
+
+                        <br/><br/>
+
+                        Asagidaki fotografta gosterildigi gibi, Londra sunucusunu secip, baglan butonuna basin.
+
+                    </Text>
+
+                    <Image src={vpnApp} alt="Google Play Store Search"
+                           borderRadius="md"/>
+                </>
+            )}
+
+            {stepIndex === 7 && (
+                <>
+                    <Heading as='h1' size='lg' mb={4} style={{color: "black"}}><span style={{color: "darkgreen"}}>7. Adim</span>:
+                        Google Play Store'a geri donun.</Heading>
+                    <Text>
+                        <strong>'VPN Super Unlimited Proxy'</strong> uygulamasınında Ingiltere sunucusuna baglandiktan sonra, Google Play Store uygulamasini yeniden acin.
+
+                        <br/><br/>
+
+                        Yeniden arama yapacagiz.
+
+                    </Text>
+
+                    <Image src={vpnApp} alt="Google Play Store Search"
+                           borderRadius="md"/>
+                </>
+            )}
+
+            {stepIndex === 8 && (
+                <>
+                    <Heading as='h1' size='lg' mb={4} style={{color: "black"}}><span style={{color: "darkgreen"}}>8. Adim</span>:
+                        Saudi Visa Bio uygulamasini indirin.</Heading>
+                    <Text>
+                        Google Play Store'da ikinci adimda yaptigimiz gibi, arama yaparak, bu sefer "Saudi Visa Bio" uygulamasini aratiyoruz.
+
+                        <br/><br/>
+
+                        <b>Saudi Visa Bio</b> uygulamasi alttaki fotoğrafta gösterilen uygulama simgesine sahip olan uygulamadır.
+
+                    </Text>
+
+                    <Image src={vpnApp} alt="Google Play Store Search"
+                           borderRadius="md"/>
+                </>
+            )}
+
+            {stepIndex === 9 && (
+                <>
+                    <Heading as='h1' size='lg' mb={4} style={{color: "black"}}><span style={{color: "darkgreen"}}>9. Adim</span>:
+                        Saudi Visa Bio uygulamasini acin.</Heading>
+                    <Text>
+                        Saudi Visa Buo uygulamasini acin. Burdan boyle ekranda gozuken talimatlari takip ederek
+
+                        <br/><br/>
+
+                        <b>Saudi Visa Bio</b> uygulamasi alttaki fotoğrafta gösterilen uygulama simgesine sahip olan uygulamadır.
+
+                    </Text>
+
+                    <Image src={vpnApp} alt="Google Play Store Search"
+                           borderRadius="md"/>
                 </>
             )}
 
@@ -116,7 +196,7 @@ export const MobileStatementLandingText = () => {
                     <Button onClick={prevStep} isDisabled={stepIndex === 0} style={{ background: "transparent"}}>
                         Geri
                     </Button>
-                    <Button onClick={nextStep} isDisabled={stepIndex === 6} style={{ background: "darkgreen", color: "white"}}>
+                    <Button onClick={nextStep} isDisabled={stepIndex === 10} style={{ background: "darkgreen", color: "white"}}>
                         İleri
                     </Button>
                 </Box>

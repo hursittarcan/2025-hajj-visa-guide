@@ -1,6 +1,7 @@
 import { Box, Heading, Text, Image, Button } from "@chakra-ui/react";
 import { useState } from "react";
 import mainImage from "../assets/kaaba.png";
+import playStore from "../assets/play.jpg";
 
 export const MobileStatementLandingText = () => {
     const [stepIndex, setStepIndex] = useState(0);
@@ -37,17 +38,41 @@ export const MobileStatementLandingText = () => {
 
             {stepIndex === 1 && (
                 <>
-                    <Heading as='h1' size='lg' mb={4}>Bir Android cihaz bulun</Heading>
-                    <Text>Samsung, LG, Huawei,... Bu rehber iPhone için geçerli değildir.</Text>
-                    <Image src="https://source.unsplash.com/400x300/?android" alt="Android Device" borderRadius="md" />
+                    <Heading as='h1' size='lg' mb={4} style={{ color: "black" }}><span style={{ color: "darkgreen"}}>1. Adim</span>: Bir Android cihazi bulun.</Heading>
+                    <Text style={{ color: "black"}}>Bu kilavuz sadece <b>Android telefonlar</b> (Samsung, LG, Huawei gibi) içindir.
+
+                        <br/><br/>
+
+                        <u><b>iPhone ile kullanılamaz.</b></u>
+
+                        <br/><br/>
+
+                        Hac vizesi başvurusunu en kolay şekilde Android telefonla yapabilirsiniz.</Text>
+
+
+                    <br/><br/>
+                    <br/><br/>
+                    <br/><br/>
+                    <br/><br/>
+                    <br/><br/>
                 </>
             )}
 
             {stepIndex === 2 && (
                 <>
-                    <Heading as='h1' size='lg' mb={4}>Google Play Store'u açın</Heading>
-                    <Text>'VPN' kelimesini aratın.</Text>
-                    <Image src="https://source.unsplash.com/400x300/?search" alt="Google Play Store Search" borderRadius="md" />
+                    <Heading as='h1' size='lg' mb={4} style={{color: "black"}}><span style={{ color: "darkgreen"}}>2. Adim</span>: Google Play Store'u açın</Heading>
+                    <Text style={{color: "black"}}>
+                        Telefonunuzda <b>Google Play Store</b> uygulamasını bulun ve açın.
+
+                        <br/><br/>
+
+                        <b>Google Play Store</b> uygulamasi alttaki fotoğrafta gösterilen uygulama simgesine sahip olan uygulamadır.
+                    </Text>
+                    <br/>
+                    <Image src={playStore}  alt="Google Play Store Search"
+                           borderRadius="md"/>
+                    <br/><br/>
+                    <br/><br/>
                 </>
             )}
 
@@ -84,10 +109,10 @@ export const MobileStatementLandingText = () => {
 
             {stepIndex > 0 && (
                 <Box display="flex" justifyContent="space-between" width="100%" mt={4}>
-                    <Button onClick={prevStep} isDisabled={stepIndex === 0} colorScheme="blue">
+                    <Button onClick={prevStep} isDisabled={stepIndex === 0} style={{ background: "transparent"}}>
                         Geri
                     </Button>
-                    <Button onClick={nextStep} isDisabled={stepIndex === 6} colorScheme="blue">
+                    <Button onClick={nextStep} isDisabled={stepIndex === 6} style={{ background: "darkgreen", color: "white"}}>
                         İleri
                     </Button>
                 </Box>

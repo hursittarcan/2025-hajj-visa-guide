@@ -1,10 +1,8 @@
-import { Box, Heading, Text, Image, Button, VStack } from "@chakra-ui/react";
-import { useTranslation } from "react-i18next";
+import { Box, Heading, Text, Image, Button } from "@chakra-ui/react";
 import { useState } from "react";
 import mainImage from "../assets/kaaba.png";
 
 export const MobileStatementLandingText = () => {
-    const { t } = useTranslation();
     const [stepIndex, setStepIndex] = useState(0);
 
     const nextStep = () => {

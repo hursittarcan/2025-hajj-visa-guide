@@ -7,6 +7,7 @@ import {
     Image,
 } from '@chakra-ui/react'
 
+// @ts-ignore
 export const ShowcaseItem = ({ name, image, url }) => {
     return (
         <VStack alignItems='flex-start' spacing={3}>

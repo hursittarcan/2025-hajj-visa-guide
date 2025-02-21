@@ -1,6 +1,5 @@
 import {Container, SimpleGrid, VStack,} from '@chakra-ui/react'
 import {ShowcaseItem} from "./ShowcaseItem.tsx";
-import placeholderImage from '../assets/placeholder.png'
 import fadeBarbershopImage from '../../public/cases/fade-barbershop.png'
 import cocoNoirFashionImage from '../../public/cases/coconoirfashion.png'
 import ethereumImage from '../../public/cases/ethereum3.png'

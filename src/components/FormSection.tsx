@@ -82,15 +82,6 @@ const FormSection = () => {
                     </VStack>
                 </Box>
             </Container>
-
-            {/* Footprint Animation Keyframes */}
-            <style jsx>{`
-                @keyframes footprint {
-                    0% { transform: translateX(-50px) scale(0.8) rotate(0deg); opacity: 0; }
-                    50% { transform: translateX(25px) scale(1) rotate(10deg); opacity: 1; }
-                    100% { transform: translateX(150px) scale(0.8) rotate(20deg); opacity: 0; }
-                }
-            `}</style>
         </Box>
     )
 }
